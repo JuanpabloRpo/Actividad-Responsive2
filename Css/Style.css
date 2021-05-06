@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body, main{
+    padding: 0px;
+    margin: 0px;
+}
+
+.navegacion-1{
+    width: 100%;
+    height: 10vh;
+}
+
+.navegacion-1 .row{
+    width: 100%;
+    height: 10vh;
+    background-color: #303030;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacion-1 .row ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0px;
+}
+
+.navegacion-1 .row ul li{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5em;
+    padding: 5px 10px;
+    list-style: none;
+}
+
+.navegacion-1 .row ul li:hover{
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+.navegacion-1 .row ul li a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.navegacion-2{
+    display: none;
+} 
+
+/* Responsive */
+
+@media (max-width: 768px){
+    .navegacion-2{
+        display: block;
+    }
+
+    .navegacion-2 .row{
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #303030;
+    }
+
+    .navegacion-2 .row ul{
+        padding-left: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .navegacion-2 .row ul li{
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 1.5em;
+        width: 100%;
+        height: 100%;
+        padding: 7px 0px;
+        list-style: none;
+        text-align: center;
+    }
+
+    .navegacion-2 .row ul li:hover{
+        background-color: #000000;
+        border-radius: 20px;
+    }
+
+    .navegacion-2 .row ul li a {
+        text-decoration: none;
+        width: 100%;
+        color: white;
+        letter-spacing: 1.5px;
+    }
+
+    .navegacion-1{
+        display: none;
+    }
+}
